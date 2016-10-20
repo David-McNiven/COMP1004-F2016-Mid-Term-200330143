@@ -38,5 +38,20 @@ namespace COMP1004_F2016_Mid_Term_200330143
         {
             Application.Exit();
         }
+
+        private void FinalForm_Load(object sender, EventArgs e)
+        {
+            Character character = Program.character;
+
+            FirstNameTextBox.Text = character.FirstName;
+            LastNameTextBox.Text = character.LastName;
+            RaceTextBox.Text = character.Race;
+            StrengthTextBox.Text = character.Strength;
+            DexterityTextBox.Text = character.Dexterity;
+            ConstitutionTextBox.Text = character.Constitution;
+            IntelligenceTextBox.Text = character.Intelligence;
+            WisdomTextBox.Text = character.Wisdom;
+            CharismaTextBox.Text = character.Charisma;
+        }
     }
 }

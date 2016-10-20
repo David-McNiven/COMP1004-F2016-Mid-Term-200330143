@@ -16,6 +16,7 @@ namespace COMP1004_F2016_Mid_Term_200330143
     {
         // private Instance Object
         private Random _random;
+        public GenerateNameForm previousForm;
 
 
 
