@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Character generator	
+/// David McNiven
+/// Student # 200330143
+/// Created on October 20th 2016
+/// Generates a basic character sheet for a DnD campaign
+/// </summary>
 namespace COMP1004_F2016_Mid_Term_200330143
 {
     public partial class FinalForm : Form
@@ -39,6 +46,11 @@ namespace COMP1004_F2016_Mid_Term_200330143
             Application.Exit();
         }
 
+        /// <summary>
+        ///  retrieves and displays all stored character information on form load
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FinalForm_Load(object sender, EventArgs e)
         {
             Character character = Program.character;

@@ -9,6 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Character generator	
+/// David McNiven
+/// Student # 200330143
+/// Created on October 20th 2016
+/// Generates a basic character sheet for a DnD campaign
+/// </summary>
 namespace COMP1004_F2016_Mid_Term_200330143
 {
     public partial class RaceAndClassForm : Form
@@ -44,6 +51,9 @@ namespace COMP1004_F2016_Mid_Term_200330143
             ChangePicture();
         }
 
+        /// <summary>
+        ///  changes the picture displayed based on the currently selected race
+        /// </summary>
         private void ChangePicture()
         {
             if (_selectedRace.Equals("Human"))
@@ -65,6 +75,11 @@ namespace COMP1004_F2016_Mid_Term_200330143
             RacePictureBox.Refresh();
         }
 
+        /// <summary>
+        /// saves the current race before moving to the next form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             Character character = Program.character;
@@ -78,6 +93,11 @@ namespace COMP1004_F2016_Mid_Term_200330143
             this.Hide();
         }
 
+        /// <summary>
+        /// checks if a race has been previously selected and changes the picture and radio buttons accordingly
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RaceAndClassForm_Load(object sender, EventArgs e)
         {
             Character character = Program.character;

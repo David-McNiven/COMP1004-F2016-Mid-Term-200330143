@@ -10,6 +10,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 
+/// <summary>
+/// Character generator	
+/// David McNiven
+/// Student # 200330143
+/// Created on October 20th 2016
+/// Generates a basic character sheet for a DnD campaign
+/// </summary>
 namespace COMP1004_F2016_Mid_Term_200330143
 {
     public partial class AbilityGeneratorForm : Form
@@ -19,7 +26,7 @@ namespace COMP1004_F2016_Mid_Term_200330143
         public GenerateNameForm previousForm;
 
 
-
+        
         public AbilityGeneratorForm()
         {
             InitializeComponent();
@@ -111,6 +118,11 @@ namespace COMP1004_F2016_Mid_Term_200330143
             raceAndClassForm.Show();
         }
 
+        /// <summary>
+        /// handles the swapping of ability scores based on the two names provided
+        /// </summary>
+        /// <param name="Ability1"></param>
+        /// <param name="Ability2"></param>
         private void AbilitySwap(String Ability1, String Ability2)
         {
             String AbilityScoreTemp;
@@ -289,6 +301,11 @@ namespace COMP1004_F2016_Mid_Term_200330143
             }
         }
 
+        /// <summary>
+        /// event handler for the ability swapping button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SwapButton_Click(object sender, EventArgs e)
         {
             if (!AbilityListBox.SelectedItem.ToString().Equals(AbilityListBox2.SelectedItem.ToString())) {
@@ -297,6 +314,11 @@ namespace COMP1004_F2016_Mid_Term_200330143
             }
         }
 
+        /// <summary>
+        /// event handler for the modify abilities button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ModifyButton_Click(object sender, EventArgs e)
         {
             if (ModifyAbilitiesListBox.SelectedItem.ToString().Equals("Strength"))

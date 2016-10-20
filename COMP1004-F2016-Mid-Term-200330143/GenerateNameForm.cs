@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Character generator	
+/// David McNiven
+/// Student # 200330143
+/// Created on October 20th 2016
+/// Generates a basic character sheet for a DnD campaign
+/// </summary>
 namespace COMP1004_F2016_Mid_Term_200330143
 {
     public partial class GenerateNameForm : Form
@@ -20,6 +27,9 @@ namespace COMP1004_F2016_Mid_Term_200330143
             InitializeComponent();
         }
 
+        /// <summary>
+        ///  handles random selection of names from the two lists and places them in the textboxes
+        /// </summary>
         public void GenerateNames()
         {
             FirstNameListBox.ClearSelected();
@@ -31,18 +41,32 @@ namespace COMP1004_F2016_Mid_Term_200330143
             LastNameTextBox.Text = LastNameListBox.SelectedItem.ToString();
         }
 
+        /// <summary>
+        /// generates a new name on form load
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GenerateNameForm_Load(object sender, EventArgs e)
         {
             this._random = new Random();
             GenerateNames();
         }
 
-
+        /// <summary>
+        /// event handler for the generate button 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GenerateButton_Click(object sender, EventArgs e)
         {
             GenerateNames();
         }
 
+        /// <summary>
+        /// event handler for the next button, saves the name for future forms
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             Character character = Program.character;
