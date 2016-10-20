@@ -50,14 +50,16 @@
             this.DexterityLabel = new System.Windows.Forms.Label();
             this.StrengthTextBox = new System.Windows.Forms.TextBox();
             this.StrengthLabel = new System.Windows.Forms.Label();
-            this.LastNameLabel2 = new System.Windows.Forms.Label();
+            this.LastNameLabel = new System.Windows.Forms.Label();
             this.LastNameTextBox = new System.Windows.Forms.TextBox();
-            this.FirstNameLabel2 = new System.Windows.Forms.Label();
+            this.FirstNameLabel = new System.Windows.Forms.Label();
             this.FirstNameTextBox = new System.Windows.Forms.TextBox();
             this.RaceLabel = new System.Windows.Forms.Label();
             this.RaceTextBox = new System.Windows.Forms.TextBox();
+            this.RacePictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.AbilityGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RacePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -278,15 +280,15 @@
             this.StrengthLabel.TabIndex = 0;
             this.StrengthLabel.Text = "Strength";
             // 
-            // LastNameLabel2
+            // LastNameLabel
             // 
-            this.LastNameLabel2.AutoSize = true;
-            this.LastNameLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameLabel2.Location = new System.Drawing.Point(340, 30);
-            this.LastNameLabel2.Name = "LastNameLabel2";
-            this.LastNameLabel2.Size = new System.Drawing.Size(86, 20);
-            this.LastNameLabel2.TabIndex = 11;
-            this.LastNameLabel2.Text = "Last Name";
+            this.LastNameLabel.AutoSize = true;
+            this.LastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNameLabel.Location = new System.Drawing.Point(340, 30);
+            this.LastNameLabel.Name = "LastNameLabel";
+            this.LastNameLabel.Size = new System.Drawing.Size(86, 20);
+            this.LastNameLabel.TabIndex = 11;
+            this.LastNameLabel.Text = "Last Name";
             // 
             // LastNameTextBox
             // 
@@ -296,15 +298,15 @@
             this.LastNameTextBox.Size = new System.Drawing.Size(152, 26);
             this.LastNameTextBox.TabIndex = 10;
             // 
-            // FirstNameLabel2
+            // FirstNameLabel
             // 
-            this.FirstNameLabel2.AutoSize = true;
-            this.FirstNameLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameLabel2.Location = new System.Drawing.Point(168, 30);
-            this.FirstNameLabel2.Name = "FirstNameLabel2";
-            this.FirstNameLabel2.Size = new System.Drawing.Size(86, 20);
-            this.FirstNameLabel2.TabIndex = 9;
-            this.FirstNameLabel2.Text = "First Name";
+            this.FirstNameLabel.AutoSize = true;
+            this.FirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameLabel.Location = new System.Drawing.Point(168, 30);
+            this.FirstNameLabel.Name = "FirstNameLabel";
+            this.FirstNameLabel.Size = new System.Drawing.Size(86, 20);
+            this.FirstNameLabel.TabIndex = 9;
+            this.FirstNameLabel.Text = "First Name";
             // 
             // FirstNameTextBox
             // 
@@ -332,6 +334,16 @@
             this.RaceTextBox.Size = new System.Drawing.Size(152, 26);
             this.RaceTextBox.TabIndex = 12;
             // 
+            // RacePictureBox
+            // 
+            this.RacePictureBox.Image = global::COMP1004_F2016_Mid_Term_200330143.Properties.Resources.Human_Male;
+            this.RacePictureBox.Location = new System.Drawing.Point(220, 194);
+            this.RacePictureBox.Name = "RacePictureBox";
+            this.RacePictureBox.Size = new System.Drawing.Size(206, 220);
+            this.RacePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RacePictureBox.TabIndex = 14;
+            this.RacePictureBox.TabStop = false;
+            // 
             // FinalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,11 +351,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(531, 507);
             this.ControlBox = false;
+            this.Controls.Add(this.RacePictureBox);
             this.Controls.Add(this.RaceLabel);
             this.Controls.Add(this.RaceTextBox);
-            this.Controls.Add(this.LastNameLabel2);
+            this.Controls.Add(this.LastNameLabel);
             this.Controls.Add(this.LastNameTextBox);
-            this.Controls.Add(this.FirstNameLabel2);
+            this.Controls.Add(this.FirstNameLabel);
             this.Controls.Add(this.FirstNameTextBox);
             this.Controls.Add(this.AbilityGroupBox);
             this.Controls.Add(this.ExitButton);
@@ -359,6 +372,7 @@
             this.menuStrip1.PerformLayout();
             this.AbilityGroupBox.ResumeLayout(false);
             this.AbilityGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RacePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,11 +402,12 @@
         private System.Windows.Forms.Label DexterityLabel;
         private System.Windows.Forms.TextBox StrengthTextBox;
         private System.Windows.Forms.Label StrengthLabel;
-        private System.Windows.Forms.Label LastNameLabel2;
+        private System.Windows.Forms.Label LastNameLabel;
         private System.Windows.Forms.TextBox LastNameTextBox;
-        private System.Windows.Forms.Label FirstNameLabel2;
+        private System.Windows.Forms.Label FirstNameLabel;
         private System.Windows.Forms.TextBox FirstNameTextBox;
         private System.Windows.Forms.Label RaceLabel;
         private System.Windows.Forms.TextBox RaceTextBox;
+        private System.Windows.Forms.PictureBox RacePictureBox;
     }
 }

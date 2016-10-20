@@ -41,14 +41,15 @@ namespace COMP1004_F2016_Mid_Term_200330143
         private void GenerateButton_Click(object sender, EventArgs e)
         {
             GenerateNames();
-            Character character = Program.character;
-
-            character.FirstName = FirstNameTextBox.Text;
-            character.LastName = LastNameTextBox.Text;
         }
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            Character character = Program.character;
+
+            character.FirstName = FirstNameTextBox.Text;
+            character.LastName = LastNameTextBox.Text;
+
             this.Hide();
             AbilityGeneratorForm AbilityGeneratorForm = new AbilityGeneratorForm();
             AbilityGeneratorForm.previousForm = this;

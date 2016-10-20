@@ -43,15 +43,35 @@ namespace COMP1004_F2016_Mid_Term_200330143
         {
             Character character = Program.character;
 
-            FirstNameTextBox.Text = character.FirstName;
-            LastNameTextBox.Text = character.LastName;
-            RaceTextBox.Text = character.Race;
             StrengthTextBox.Text = character.Strength;
             DexterityTextBox.Text = character.Dexterity;
             ConstitutionTextBox.Text = character.Constitution;
             IntelligenceTextBox.Text = character.Intelligence;
             WisdomTextBox.Text = character.Wisdom;
             CharismaTextBox.Text = character.Charisma;
+
+            FirstNameTextBox.Text = character.FirstName;
+            LastNameTextBox.Text = character.LastName;
+
+            RaceTextBox.Text = character.Race;
+
+            if (RaceTextBox.Text.Equals("Elf"))
+            {
+                RacePictureBox.Image = Properties.Resources.Elf_Male;
+            }
+            else if (RaceTextBox.Text.Equals("Dwarf"))
+            {
+                RacePictureBox.Image = Properties.Resources.Dwarf_Male;
+            }
+            else if (RaceTextBox.Text.Equals("Halfling"))
+            {
+                RacePictureBox.Image = Properties.Resources.Halfling_Male;
+            }
+            else
+            {
+                RacePictureBox.Image = Properties.Resources.Human_Male;
+            }
+            RacePictureBox.Refresh();
         }
     }
 }
